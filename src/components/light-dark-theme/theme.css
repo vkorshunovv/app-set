@@ -1,0 +1,44 @@
+:root {
+    --bg-color: #fff;
+    --bg-text: #000000;
+    --btn-color: #000000;
+    --btn-text: #fff;
+}
+
+[data-theme = 'dark'] {
+    --bg-color: #000000;
+    --bg-text: #fff;
+    --btn-color: #fff;
+    --btn-text: #000000;
+}
+
+.light-dark-mode {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    color: var(--bg-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container p {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container button {
+    background: var(--btn-color);
+    color: var(--btn-text);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
