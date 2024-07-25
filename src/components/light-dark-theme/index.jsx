@@ -1,8 +1,12 @@
 import React from "react";
+import {useLocalStorage} from "./useLocalStorage";
 
 const LightDarkMode = () => {
-  const [theme, useTheme] = useCurrentStorage("dark", "light");
+  const [theme, setTheme] = useLocalStorage("dark", "light");
 
+  const handleToggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <div className="light-dark-mode">
