@@ -5,6 +5,7 @@ import StarRating from "./components/star-rating";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-theme";
 import ScrollIndicator from "./components/scroll-indicator";
+import CustomTabs from "./components/custom-tabs/tabs";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <StarRating /> */}
       {/* <ImageSlider /> */}
       {/* <LightDarkMode /> */}
-      <ScrollIndicator url="https://dummyapi.online/api/movies" />
+      {/* <ScrollIndicator url="https://dummyapi.online/api/movies" /> */}
+      <CustomTabs />
     </div>
   );
 }
